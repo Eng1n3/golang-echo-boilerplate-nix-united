@@ -34,8 +34,7 @@ func Init(cfg *config.Config) *gorm.DB {
 	seedersStack.AddSeeder(&usersSeeder)
 
 	//Apply seed
-	err = seedersStack.Seed()
-	fmt.Println(err, 38)
+	seedersStack.Seed()
 	// fmt.Println(39)
 	//Apply clear
 	// err = seedersStack.Clear()
